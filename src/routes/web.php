@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'DefaultController@show')->name('default.show');
+Route::group(['middleware' => 'language:en'], function () {
+    Route::get('/', 'DefaultController@show')->name('en.default.show');
+});
