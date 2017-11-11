@@ -9732,8 +9732,8 @@ acronym {
 
 .main-content {
   background-color: #fff;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .profile__name {
@@ -9768,6 +9768,10 @@ acronym {
   color: #343a40;
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+
+.section:first-child {
+  margin-top: 0;
 }
 
 .section__header {

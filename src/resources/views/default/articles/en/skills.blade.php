@@ -1,4 +1,4 @@
-<article class="section mt-0" id="skills">
+<article class="section" id="skills">
     <header class="section__header">
         <h3 class="section__title">{{ trans('pages.default.show.content.skills') }}</h3>
     </header>
