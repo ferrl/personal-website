@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
- * LinkEvent class.
+ * Class LinkEvent
  *
  * @property int $id
  * @property string $slug

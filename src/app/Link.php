@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Collection;
 
 /**
- * Link class.
+ * Class Link
  *
  * @property int $id
  * @property string $slug
