@@ -1,0 +1,39 @@
+.section {
+  color: $gray-800;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.section__header {
+  background: $white;
+  display: block;
+  left: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.section__title {
+  color: $primary;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.03125rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.section__content {
+  margin-top: 1.5rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .section__header {
+    left: auto;
+    position: static;
+    right: auto;
+    top: auto;
+  }
+}

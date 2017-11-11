@@ -1,1 +1,9 @@
-@import "~bootstrap/scss/bootstrap";
+@import "global/variables";
+@import "vendor/bootstrap";
+@import "global/reset";
+@import "layout/main-header";
+@import "layout/main-content";
+@import "components/profile";
+@import "components/social";
+@import "components/section";
+@import "components/article";
