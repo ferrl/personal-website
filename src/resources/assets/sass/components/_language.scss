@@ -1,0 +1,30 @@
+.language {
+  font-size: 0.875rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.language__item {
+  display: inline-block;
+}
+
+.language__item.active {
+  font-weight: bold;
+}
+
+.language__item:before {
+  color: $gray-400;
+  content: '/';
+  display: inline-block;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.language__item:first-child:before {
+  display: none;
+}
+
+.language__link {
+  color: $gray-700;
+}

@@ -17,7 +17,7 @@ class CertificateSeeder extends Seeder
             'order' => 1,
             'en' => [
                 'title' => 'Inbound Marketing',
-                'content' => '<p>Issued by <a href="http://cursos.resultadosdigitais.com.br" hreflang="pt-BR" target="_blank" rel=nofollow noopener>RD Station</a>.</p>',
+                'content' => '<p>Issued by <a href="http://cursos.resultadosdigitais.com.br" hreflang="pt-BR" target="_blank" rel=nofollow noopener">RD Station</a>.</p>',
             ],
             'pt_BR' => [
                 'title' => 'Inbound Marketing',

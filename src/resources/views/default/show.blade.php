@@ -17,17 +17,33 @@ $certificates = new App\Services\CertificateService;
 @section('content')
     <header class="main-header">
         <div class="container">
-            <div class="profile">
-                <div class="profile__image">
-                    <img src="https://source.unsplash.com/collection/162326/300x300"
-                         alt="{{ $resumes->first()->name }} - {{ $resumes->first()->position }}" class="img-fluid rounded profile__image">
-                </div>
-                <div class="profile__info">
-                    <h2 class="profile__name">{{ $resumes->first()->name }}</h2>
-                    <h1 class="profile__description">{{ $resumes->first()->position }}</h1>
-                    <address class="profile__address">
-                        {{ $resumes->first()->location }}
-                    </address>
+            <div class="main-header__content">
+                <ul class="language">
+                    <li class="language__item {{ config('app.locale') === 'en' ? 'active' : '' }}">
+                        <a href="{{ route('en.default.show') }}" class="language__link">
+                            <span class="d-none d-md-inline-block">English</span>
+                            <span class="d-inline-block d-md-none">EN</span>
+                        </a>
+                    </li>
+                    <li class="language__item {{ config('app.locale') === 'pt_BR' ? 'active' : '' }}">
+                        <a href="{{ route('pt_BR.default.show') }}" class="language__link">
+                            <span class="d-none d-md-inline-block">Português</span>
+                            <span class="d-inline-block d-md-none">PT</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="profile">
+                    <div class="profile__image">
+                        <img src="{{ asset('images/picture.png') }}"
+                             alt="{{ $resumes->first()->name }} - {{ $resumes->first()->position }}" class="img-fluid rounded profile__image">
+                    </div>
+                    <div class="profile__info">
+                        <h2 class="profile__name">{{ $resumes->first()->name }}</h2>
+                        <h1 class="profile__description">{{ $resumes->first()->position }}</h1>
+                        <address class="profile__address">
+                            {{ $resumes->first()->location }}
+                        </address>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,5 +92,4 @@ $certificates = new App\Services\CertificateService;
             </div>
         </div>
     </div>
-    File structure defined.
 @stop

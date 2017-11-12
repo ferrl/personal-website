@@ -15,7 +15,7 @@ return [
 
     'default' => [
         'show' => [
-            'title' => 'Lucas Ferreira | Full Stack Developer',
+            'title' => 'Lucas Ferreira | Full-Stack Developer',
             'description' => 'I am a full-stack web developer from Brazil. I\'ve had the opportunity to work with amazing clients across the country, check out my portfolio.',
             'type' => 'summary',
             'content' => [

@@ -1,5 +1,22 @@
 .main-header {
   background-color: $gray-100;
+}
+
+.main-header__content {
   padding-bottom: 1rem;
-  padding-top: 1rem;
+
+  .language {
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .main-header__content {
+    padding-top: 1rem;
+
+    .language {
+      float: right;
+      text-align: left;
+    }
+  }
 }

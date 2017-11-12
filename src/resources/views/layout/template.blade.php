@@ -16,7 +16,13 @@
 <body>
     @yield('content')
 
+    <footer class="bg-light">
+        <div class="container">
+            <p class="text-center text-muted m-0 py-3">Lucas Ferreira - {{ date('Y') }}</p>
+        </div>
+    </footer>
+
     {{-- scripts --}}
-    <style src="{{ asset('js/app.js') }}"></style>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
