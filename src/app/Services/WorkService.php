@@ -8,15 +8,14 @@ use Illuminate\Support\Collection;
 class WorkService
 {
     /**
-     * Get first instance of resume. In this case
-     * is should only have one.
+     * Get all instance of work experience.
      *
      * @return Work[]|Collection
      */
     public function all()
     {
         return cache()->remember('works.all', 30, function () {
-            return Work::query()->orderByDesc('order')->get();
+            return Work::query()->withTranslation()->orderByDesc('order')->get();
         });
     }
 }

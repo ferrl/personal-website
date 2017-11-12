@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $content
  * @property string $locale
  */
-class WorkTranslation extends Model
+class ProjectTranslation extends Model
 {
     /**
      * Indicates if the model should be timestamped.

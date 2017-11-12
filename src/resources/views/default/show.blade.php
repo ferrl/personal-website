@@ -10,6 +10,7 @@
 @php
 $resumes = new App\Services\ResumeService;
 $works = new App\Services\WorkService;
+$projects = new App\Services\ProjectService;
 @endphp
 
 @section('content')
@@ -60,20 +61,12 @@ $works = new App\Services\WorkService;
                     @endcomponent
                     @component('layout.components.section')
                         @slot('title', trans('pages.default.show.content.work'))
-                        @each('layout.components.article-work', $works->all(), 'work')
+                        @each('layout.components.article-generic', $works->all(), 'resource')
                     @endcomponent
-                    <section class="section" id="projects">
-                        <div class="section__header">
-                            <h3 class="section__title">{{ trans('pages.default.show.content.projects') }}</h3>
-                        </div>
-                        <div class="section__content">
-                            @include('default.articles.'.config('app.locale').'.projects.sonne')
-                            @include('default.articles.'.config('app.locale').'.projects.aaa')
-                            @include('default.articles.'.config('app.locale').'.projects.inversa')
-                            @include('default.articles.'.config('app.locale').'.projects.cafe-brasil')
-                            @include('default.articles.'.config('app.locale').'.projects.administradores-premium')
-                        </div>
-                    </section>
+                    @component('layout.components.section')
+                        @slot('title', trans('pages.default.show.content.projects'))
+                        @each('layout.components.article-generic', $projects->all(), 'resource')
+                    @endcomponent
                     <section class="section" id="certificates">
                         <div class="section__header">
                             <h3 class="section__title">{{ trans('pages.default.show.content.certificates') }}</h3>

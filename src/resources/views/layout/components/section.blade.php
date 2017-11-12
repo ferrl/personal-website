@@ -1,4 +1,4 @@
-<article class="section" id="contact">
+<article class="section">
     <header class="section__header">
         <h3 class="section__title">{{ $title }}</h3>
     </header>
