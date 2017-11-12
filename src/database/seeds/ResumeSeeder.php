@@ -18,19 +18,19 @@ class ResumeSeeder extends Seeder
             'birth_date' => Carbon::createFromDate(1994, 03, 21),
             'en' => [
                 'position' => 'Full Stack Developer',
-                'location' => 'Natal, RN - Brazil',
+                'location' => 'Natal, Brazil',
                 'contact' => '<p>Contact me for availability, rates or collaboration. You can reach me at my <a href="mailto:me@ferrl.io">e-mail</a> or <a href="skype:lucasferreira_113">skype</a>. I usually take one day to reply.</p>',
                 'specialties' => '<p class="font-weight-bold">- Software Architecture<br>- System Operations<br>- Amazon Web Services<br>- Laravel Framework<br>- VueJS Framework</p>',
                 'skills' => '<p>WordPress, ES6, Ruby on Rails, Project Management, Leadership, Search Engine Optimization.</p>',
-                'about' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at, aut deleniti ea enim excepturi fugiat maiores odit qui quisquam rerum, sapiente sed sequi sint soluta totam, ut vel vitae!</p>',
+                'about' => '<p>23yo full-stack developer. I have more than 6 years of experience as a front-end and back-end developer. In the last couple years I\'ve been specializing in Leadership, System Operations and DevOps.</p>',
             ],
             'pt_BR' => [
                 'position' => 'Desenvolvedor Full Stack',
-                'location' => 'Natal, RN - Brasil',
+                'location' => 'Natal, Brasil',
                 'contact' => '<p>Consulte-me sobre disponibilidadee  orçamentos. Você pode me encontrar no <a href="mailto:me@ferrl.io">e-mail</a> ou <a href="skype:lucasferreira_113">skype</a>. Normalmente devo levar no máximo 1 dia para responder.</p>',
                 'specialties' => '<p class="font-weight-bold">- Arquitetura de Software<br>- System Operations<br>- Amazon Web Services<br>- Laravel Framework<br>- VueJS Framework</p>',
                 'skills' => '<p>WordPress, ES6, Ruby on Rails, Project Management, Leadership, Search Engine Optimization.</p>',
-                'about' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at, aut deleniti ea enim excepturi fugiat maiores odit qui quisquam rerum, sapiente sed sequi sint soluta totam, ut vel vitae!</p>',
+                'about' => '<p>Desenvolvedor full-stack de 23 anos. Possuo mais de 6 anos de experiência como desenvolvedor front-end e back-end. Nos últimos dois anos venho me especializando em Liderança, System Operations e DevOps.</p>',
             ],
         ]);
     }

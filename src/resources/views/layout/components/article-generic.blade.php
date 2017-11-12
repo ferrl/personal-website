@@ -12,7 +12,7 @@
             </time>
             –
             @if (is_null($resource->end))
-                {{ trans('resources.terms.present') }}
+                {{ trans('pages.default.show.terms.present') }}
             @else
                 <time datetime="{{ $resource->end->format('Y-m-d') }}">
                     {{ $resource->end->formatLocalized('%b %Y') }}

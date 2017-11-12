@@ -25,7 +25,10 @@ return [
                 'about' => 'About',
                 'work' => 'Work',
                 'projects' => 'Recent Projects',
-                'certificates' => 'Certificates',
+                'certificates' => 'Certifications',
+            ],
+            'terms' => [
+                'present' => 'Present',
             ],
         ],
     ],

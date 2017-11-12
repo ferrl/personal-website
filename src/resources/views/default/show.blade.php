@@ -17,12 +17,12 @@ $certificates = new App\Services\CertificateService;
 @section('content')
     <header class="main-header">
         <div class="container">
-            <div class="profile row align-items-center">
-                <div class="col-3 col-md-2 col-lg-2">
+            <div class="profile">
+                <div class="profile__image">
                     <img src="https://source.unsplash.com/collection/162326/300x300"
                          alt="{{ $resumes->first()->name }} - {{ $resumes->first()->position }}" class="img-fluid rounded profile__image">
                 </div>
-                <div class="col-9 col-md-10 col-lg-7">
+                <div class="profile__info">
                     <h2 class="profile__name">{{ $resumes->first()->name }}</h2>
                     <h1 class="profile__description">{{ $resumes->first()->position }}</h1>
                     <address class="profile__address">
@@ -36,6 +36,10 @@ $certificates = new App\Services\CertificateService;
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-3">
+                    @component('layout.components.section')
+                        @slot('title', trans('pages.default.show.content.about'))
+                        {!! $resumes->first()->about !!}
+                    @endcomponent
                     @component('layout.components.section')
                         @slot('title', trans('pages.default.show.content.contact'))
                         {!! $resumes->first()->contact !!}
@@ -56,10 +60,6 @@ $certificates = new App\Services\CertificateService;
                     </div>
                 </div>
                 <div class="col-12 col-md-11 col-lg-7 ml-lg-5">
-                    @component('layout.components.section')
-                        @slot('title', trans('pages.default.show.content.about'))
-                        {!! $resumes->first()->about !!}
-                    @endcomponent
                     @component('layout.components.section')
                         @slot('title', trans('pages.default.show.content.work'))
                         @each('layout.components.article-generic', $works->all(), 'resource')

@@ -68,8 +68,8 @@ class CertificateSeeder extends Seeder
 
         Certificate::query()->forceCreate([
             'begin' => '2017-05-01',
-            'end' => '2019-03-31',
-            'order' => 4,
+            'end' => '2019-04-30',
+            'order' => 5,
             'en' => [
                 'title' => 'AWS Certified Developer - Associate',
                 'content' => '<p>Issued by <a href="https://aws.amazon.com/pt/certification/certified-developer-associate" hreflang="en-US" target="_blank" rel="nofollow noopener">Amazon Web Services</a>.</p>',
