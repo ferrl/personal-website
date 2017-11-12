@@ -7,7 +7,7 @@ use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Project
+ * Class Certificate
  *
  * @property int $id
  * @property Carbon $begin
@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  */
-class Project extends Model
+class Certificate extends Model
 {
     use Translatable;
 

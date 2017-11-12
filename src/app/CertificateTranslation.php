@@ -5,14 +5,14 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class ProjectTranslation
+ * Class CertificateTranslation
  *
  * @property int $id
  * @property string $title
  * @property string $content
  * @property string $locale
  */
-class ProjectTranslation extends Model
+class CertificateTranslation extends Model
 {
     /**
      * Indicates if the model should be timestamped.

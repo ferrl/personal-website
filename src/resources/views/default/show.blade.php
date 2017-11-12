@@ -11,6 +11,7 @@
 $resumes = new App\Services\ResumeService;
 $works = new App\Services\WorkService;
 $projects = new App\Services\ProjectService;
+$certificates = new App\Services\CertificateService;
 @endphp
 
 @section('content')
@@ -67,18 +68,10 @@ $projects = new App\Services\ProjectService;
                         @slot('title', trans('pages.default.show.content.projects'))
                         @each('layout.components.article-generic', $projects->all(), 'resource')
                     @endcomponent
-                    <section class="section" id="certificates">
-                        <div class="section__header">
-                            <h3 class="section__title">{{ trans('pages.default.show.content.certificates') }}</h3>
-                        </div>
-                        <div class="section__content">
-                            @include('default.articles.'.config('app.locale').'.certificates.aws-developer')
-                            @include('default.articles.'.config('app.locale').'.certificates.middle-management')
-                            @include('default.articles.'.config('app.locale').'.certificates.google-analytics')
-                            @include('default.articles.'.config('app.locale').'.certificates.hubspot')
-                            @include('default.articles.'.config('app.locale').'.certificates.rd-station')
-                        </div>
-                    </section>
+                    @component('layout.components.section')
+                        @slot('title', trans('pages.default.show.content.certificates'))
+                        @each('layout.components.article-generic', $certificates->all(), 'resource')
+                    @endcomponent
                 </div>
             </div>
         </div>
