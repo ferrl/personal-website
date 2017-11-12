@@ -11,6 +11,10 @@
 |
 */
 
-Route::group(['middleware' => 'language:en'], function () {
+Route::group(['middleware' => 'language:pt_BR'], function () {
+    Route::get('/', 'DefaultController@show')->name('pt_BR.default.show');
+});
+
+Route::group(['middleware' => 'language:en', 'prefix' => 'en'], function () {
     Route::get('/', 'DefaultController@show')->name('en.default.show');
 });

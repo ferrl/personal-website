@@ -7,19 +7,24 @@
 @section('og:url', route(config('app.locale') . '.default.show'))
 @section('twitter:card', trans('pages.default.show.type'))
 
+@php
+$resumes = new App\Services\ResumeService;
+$works = new App\Services\WorkService;
+@endphp
+
 @section('content')
     <header class="main-header">
         <div class="container">
             <div class="profile row align-items-center">
                 <div class="col-3 col-md-2 col-lg-2">
                     <img src="https://source.unsplash.com/collection/162326/300x300"
-                         alt="Lucas Ferreira" class="img-fluid rounded profile__image">
+                         alt="{{ $resumes->first()->name }} - {{ $resumes->first()->position }}" class="img-fluid rounded profile__image">
                 </div>
                 <div class="col-9 col-md-10 col-lg-7">
-                    <h2 class="profile__name">Lucas Ferreira</h2>
-                    <h1 class="profile__description">{{ trans('pages.default.show.content.description') }}</h1>
+                    <h2 class="profile__name">{{ $resumes->first()->name }}</h2>
+                    <h1 class="profile__description">{{ $resumes->first()->position }}</h1>
                     <address class="profile__address">
-                        {{ trans('pages.default.show.content.address') }}
+                        {{ $resumes->first()->location }}
                     </address>
                 </div>
             </div>
@@ -29,35 +34,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-11 col-lg-3">
-                    @include('default.articles.'.config('app.locale').'.contact')
+                    @component('layout.components.section')
+                        @slot('title', trans('pages.default.show.content.contact'))
+                        {!! $resumes->first()->contact !!}
+                    @endcomponent
                     <div class="row">
                         <div class="col-12 col-sm-6 col-lg-12">
-                            @include('default.articles.'.config('app.locale').'.specialties')
+                            @component('layout.components.section')
+                                @slot('title', trans('pages.default.show.content.specialties'))
+                                {!! $resumes->first()->specialties !!}
+                            @endcomponent
                         </div>
                         <div class="col-12 col-sm-6 col-lg-12">
-                            @include('default.articles.'.config('app.locale').'.skills')
+                            @component('layout.components.section')
+                                @slot('title', trans('pages.default.show.content.skills'))
+                                {!! $resumes->first()->skills !!}
+                            @endcomponent
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-11 col-lg-7 ml-lg-5">
-                    @include('default.articles.'.config('app.locale').'.about')
-                    <section class="section" id="work">
-                        <div class="section__header">
-                            <h3 class="section__title">{{ trans('pages.default.show.content.work') }}</h3>
-                        </div>
-                        <div class="section__content">
-                            @include('default.articles.'.config('app.locale').'.work.rits')
-                            @include('default.articles.'.config('app.locale').'.work.signup')
-                            @include('default.articles.'.config('app.locale').'.work.mobister-4')
-                            @include('default.articles.'.config('app.locale').'.work.mobister-3')
-                            @include('default.articles.'.config('app.locale').'.work.mobister-2')
-                            @include('default.articles.'.config('app.locale').'.work.mobister-1')
-                            @include('default.articles.'.config('app.locale').'.work.klipbox')
-                            @include('default.articles.'.config('app.locale').'.work.dz3')
-                            @include('default.articles.'.config('app.locale').'.work.kki')
-                            @include('default.articles.'.config('app.locale').'.work.marmore')
-                        </div>
-                    </section>
+                    @component('layout.components.section')
+                        @slot('title', trans('pages.default.show.content.about'))
+                        {!! $resumes->first()->about !!}
+                    @endcomponent
+                    @component('layout.components.section')
+                        @slot('title', trans('pages.default.show.content.work'))
+                        @each('layout.components.article-work', $works->all(), 'work')
+                    @endcomponent
                     <section class="section" id="projects">
                         <div class="section__header">
                             <h3 class="section__title">{{ trans('pages.default.show.content.projects') }}</h3>
