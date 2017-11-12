@@ -20,13 +20,13 @@ $certificates = new App\Services\CertificateService;
             <div class="main-header__content">
                 <ul class="language">
                     <li class="language__item {{ config('app.locale') === 'en' ? 'active' : '' }}">
-                        <a href="{{ route('en.default.show') }}" class="language__link">
+                        <a href="{{ route('en.default.show') }}" hreflang="en-US" class="language__link">
                             <span class="d-none d-md-inline-block">English</span>
                             <span class="d-inline-block d-md-none">EN</span>
                         </a>
                     </li>
                     <li class="language__item {{ config('app.locale') === 'pt_BR' ? 'active' : '' }}">
-                        <a href="{{ route('pt_BR.default.show') }}" class="language__link">
+                        <a href="{{ route('pt_BR.default.show') }}" hreflang="pt-BR" class="language__link">
                             <span class="d-none d-md-inline-block">Português</span>
                             <span class="d-inline-block d-md-none">PT</span>
                         </a>

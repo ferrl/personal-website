@@ -18,11 +18,11 @@ class ProjectSeeder extends Seeder
             'order' => 2,
             'en' => [
                 'title' => 'Administradores Premium - Learning Platform',
-                'content' => '<p>As the largest portal about business administration and marketing in Brazil, the <a href="https://www.administradores.com.br">Administradores</a> has a average of 200k visits per day. The objective of this project was to launch a completely new <a href="https://www.administradores.com.br/premium" hreflang="pt-BR" target="_blank" rel="nofollow noopener">learning platform</a> for it\'s premium subscribers.</p>',
+                'content' => '<p>As the largest portal about business administration and marketing in Brazil, the <a href="https://www.administradores.com.br" hreflang="pt-BR" target="_blank" rel=nofollow noopener">Administradores</a> has a average of 200k visits per day. The objective of this project was to launch a completely new <a href="https://www.administradores.com.br/premium" hreflang="pt-BR" target="_blank" rel="nofollow noopener">learning platform</a> for it\'s premium subscribers.</p>',
             ],
             'pt_BR' => [
                 'title' => 'Administradores Premium - Plataforma de Ensino',
-                'content' => '<p>Como o mais portal sobre administração de empresas e marketing do Brasil, o <a href="https://www.administradores.com.br">Administradores</a> tem uma média de 200 mil visitas por dia. O objetivo do projeto foi de lançar uma <a href="https://www.administradores.com.br/premium" hreflang="pt-BR" target="_blank" rel="nofollow noopener">plataforma de ensino</a> completamente nova para seus assinantes premium.</p>',
+                'content' => '<p>Como o mais portal sobre administração de empresas e marketing do Brasil, o <a href="https://www.administradores.com.br" hreflang="pt-BR" target="_blank" rel="nofollow noopener">Administradores</a> tem uma média de 200 mil visitas por dia. O objetivo do projeto foi de lançar uma <a href="https://www.administradores.com.br/premium" hreflang="pt-BR" target="_blank" rel="nofollow noopener">plataforma de ensino</a> completamente nova para seus assinantes premium.</p>',
             ],
         ]);
 
