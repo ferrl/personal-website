@@ -9,6 +9,7 @@
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-NM7B8LN');</script>
+    <link rel="preload" href="{{ mix('css/app.css') }}" as="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
@@ -16,7 +17,8 @@
     <link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#1f3b85">
     <meta name="theme-color" content="#1f3b85">
     @include('layout.partials.meta-tags')
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM7B8LN"
@@ -31,6 +33,6 @@
     </footer>
 
     {{-- scripts --}}
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}" async defer></script>
 </body>
 </html>
