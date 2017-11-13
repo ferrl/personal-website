@@ -5,6 +5,7 @@
 @section('og:title', trans('pages.default.show.title'))
 @section('og:description', trans('pages.default.show.description'))
 @section('og:url', route(config('app.locale') . '.default.show'))
+@section('og:image', url('images/cover.png'))
 @section('twitter:card', trans('pages.default.show.type'))
 
 @php
