@@ -13,6 +13,8 @@ class DefaultController extends Controller
      */
     public function show()
     {
-        return view('default.show');
+        return response()
+            ->view('default.show')
+            ->header('Cache-control', 'max-age=30');
     }
 }
