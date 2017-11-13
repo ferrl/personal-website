@@ -23,5 +23,10 @@ class LinkSeeder extends Seeder
         Link::forceCreate(['slug' => 'zzQGjH', 'target' => 'http://www.portalcafebrasil.com.br/todos/podcasts']);
         Link::forceCreate(['slug' => 'hM5IcV', 'target' => 'https://cafebrasilpremium.com.br/degustacao/sumario']);
         Link::forceCreate(['slug' => 'FetOVF', 'target' => 'http://inversapub.com']);
+        Link::forceCreate(['slug' => 'ZAJQN5', 'target' => 'http://cursos.resultadosdigitais.com.br']);
+        Link::forceCreate(['slug' => 'HC7maT', 'target' => 'https://academy.hubspot.com/certification']);
+        Link::forceCreate(['slug' => 'T4wQZ2', 'target' => 'https://support.google.com/partners/answer/6089738']);
+        Link::forceCreate(['slug' => 'bo1rfc', 'target' => 'http://www.portalsmn.com.br']);
+        Link::forceCreate(['slug' => 'Y8Euy0', 'target' => 'https://aws.amazon.com/pt/certification/certified-developer-associate']);
     }
 }

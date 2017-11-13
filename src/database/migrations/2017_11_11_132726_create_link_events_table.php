@@ -16,8 +16,8 @@ class CreateLinkEventsTable extends Migration
         Schema::create('link_events', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type');
-            $table->string('referrer');
-            $table->string('domain');
+            $table->string('referrer')->nullable();
+            $table->string('domain')->nullable();
             $table->json('data')->nullable();
             $table->timestamps();
             $table->integer('link_id')->unsigned();

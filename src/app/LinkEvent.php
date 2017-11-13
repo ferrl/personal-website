@@ -21,6 +21,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class LinkEvent extends Model
 {
     /**
+     * Hit one redirect.
+     */
+    const TYPE_REDIRECT = 'redirect';
+
+    /**
      * The attributes that should be cast to native types.
      *
      * @var array

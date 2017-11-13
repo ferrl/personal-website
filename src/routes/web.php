@@ -18,3 +18,5 @@ Route::group(['middleware' => 'language:en'], function () {
 Route::group(['middleware' => 'language:pt_BR', 'prefix' => 'pt-br'], function () {
     Route::get('/', 'DefaultController@show')->name('pt_BR.default.show');
 });
+
+Route::get('{slug}', 'LinksController@redirect')->name('links.redirect');
