@@ -15,7 +15,8 @@ class CreateWorkTranslationsTable extends Migration
     {
         Schema::create('work_translations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            $table->string('job_title');
+            $table->string('company');
             $table->longText('content');
 
             $table->string('locale')->index();

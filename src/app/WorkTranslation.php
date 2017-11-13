@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
  * Class WorkTranslation
  *
  * @property int $id
- * @property string $title
+ * @property string $job_title
+ * @property string $company
  * @property string $content
  * @property string $locale
  */

@@ -15,6 +15,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $order
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property-read string $title
+ * @property-read string $content
+ * @property-read string $locale
  */
 class Certificate extends Model
 {

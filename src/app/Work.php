@@ -15,6 +15,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $order
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property-read string $job_title
+ * @property-read string $company
+ * @property-read string $content
  */
 class Work extends Model
 {
@@ -36,8 +39,8 @@ class Work extends Model
      * @var array
      */
     public $translatedAttributes = [
-        'title',
-        'format',
+        'job_title',
+        'company',
         'content',
     ];
 }
