@@ -7,7 +7,7 @@
     "require": {
         "php": ">=7.0.0",
         "dimsav/laravel-translatable": "^8.0",
-        "fideloper/proxy": "~3.3",
+        "fideloper/proxy": "^3.3",
         "htmlmin/htmlmin": "^5.0",
         "itsgoingd/clockwork": "^2.0",
         "laravel/framework": "5.5.*",
