@@ -14,7 +14,7 @@ class WorkService
      */
     public function all()
     {
-        return cache()->remember('works.all', 30, function () {
+        return cache()->remember('works.all.'.config('app.locale'), 30, function () {
             return Work::query()->withTranslation()->orderByDesc('order')->get();
         });
     }

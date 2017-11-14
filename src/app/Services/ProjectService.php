@@ -14,7 +14,7 @@ class ProjectService
      */
     public function all()
     {
-        return cache()->remember('projects.all', 30, function () {
+        return cache()->remember('projects.all.'.config('app.locale'), 30, function () {
             return Project::query()->withTranslation()->orderByDesc('order')->get();
         });
     }

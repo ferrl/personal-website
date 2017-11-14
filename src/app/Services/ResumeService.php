@@ -14,7 +14,7 @@ class ResumeService
      */
     public function first()
     {
-        return cache()->remember('resumes.first', 30, function () {
+        return cache()->remember('resumes.first.'.config('app.locale'), 30, function () {
             return Resume::query()->withTranslation()->first();
         });
     }

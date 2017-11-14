@@ -14,7 +14,7 @@ class CertificateService
      */
     public function all()
     {
-        return cache()->remember('certificates.all', 30, function () {
+        return cache()->remember('certificates.all.'.config('app.locale'), 30, function () {
             return Certificate::query()->withTranslation()->orderByDesc('order')->get();
         });
     }
