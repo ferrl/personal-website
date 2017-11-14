@@ -17,8 +17,7 @@
     <link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#1f3b85">
     <meta name="theme-color" content="#1f3b85">
     @include('layout.partials.meta-tags')
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    @inlineCss(mix('css/preload.css'))
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM7B8LN"
@@ -33,6 +32,21 @@
     </footer>
 
     {{-- scripts --}}
+    <noscript id="deferred-styles">
+    </noscript>
     <script src="{{ mix('js/app.js') }}" async defer></script>
+    <script>
+        var loadDeferredStyles = function() {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
 </body>
 </html>
