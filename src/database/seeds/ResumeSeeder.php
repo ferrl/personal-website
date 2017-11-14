@@ -24,7 +24,7 @@ class ResumeSeeder extends Seeder
                 'skills' => '<p>WordPress, ES6, Ruby on Rails, Project Management, Leadership, Search Engine Optimization.</p>',
                 'about' => '<p>23yo full-stack developer. I have more than 6 years of experience as a front-end and back-end developer. In the last couple years I\'ve been specializing in Leadership, System Operations and DevOps.</p>',
             ],
-            'pt_BR' => [
+            'pt-BR' => [
                 'position' => 'Desenvolvedor Full-Stack',
                 'location' => 'Natal, Brasil',
                 'contact' => '<p>Consulte-me sobre disponibilidade e orçamentos. Você pode me encontrar no <a href="mailto:me@ferrl.io">e-mail</a> ou <a href="skype:lucasferreira_113">skype</a>. Normalmente levarei no máximo 1 dia para responder.</p>',

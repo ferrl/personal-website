@@ -19,7 +19,7 @@ class CertificateSeeder extends Seeder
                 'title' => 'Inbound Marketing',
                 'content' => '<p>Issued by <a href="'.route('links.redirect', 'ZAJQN5').'" hreflang="pt-BR" target="_blank" rel=nofollow noopener">RD Station</a>.</p>',
             ],
-            'pt_BR' => [
+            'pt-BR' => [
                 'title' => 'Inbound Marketing',
                 'content' => '<p>Emitido por <a href="'.route('links.redirect', 'ZAJQN5').'" hreflang="pt-BR" target="_blank" rel="nofollow noopener">RD Station</a>.</p>',
             ],
@@ -33,7 +33,7 @@ class CertificateSeeder extends Seeder
                 'title' => 'Inbound Marketing',
                 'content' => '<p>Issued by <a href="'.route('links.redirect', 'HC7maT').'" hreflang="en-US" target="_blank" rel="nofollow noopener">Hubspot Academy</a>.</p>',
             ],
-            'pt_BR' => [
+            'pt-BR' => [
                 'title' => 'Inbound Marketing',
                 'content' => '<p>Emitido por <a href="'.route('links.redirect', 'HC7maT').'" hreflang="en-US" target="_blank" rel="nofollow noopener">Hubspot Academy</a>.</p>',
             ],
@@ -47,7 +47,7 @@ class CertificateSeeder extends Seeder
                 'title' => 'Google Analytics Individual Qualification',
                 'content' => '<p>Issued by <a href="'.route('links.redirect', 'T4wQZ2').'" hreflang="en-US" target="_blank" rel="nofollow noopener">Google</a>.</p>',
             ],
-            'pt_BR' => [
+            'pt-BR' => [
                 'title' => 'Google Analytics Individual Qualification',
                 'content' => '<p>Emitido por <a href="'.route('links.redirect', 'T4wQZ2').'" hreflang="en-US" target="_blank" rel="nofollow noopener">Google</a>.</p>',
             ],
@@ -60,7 +60,7 @@ class CertificateSeeder extends Seeder
                 'title' => 'Leadership Development Program - Middle Management',
                 'content' => '<p>Issued by <a href="'.route('links.redirect', 'bo1rfc').'" hreflang="pt-BR" target="_blank" rel="nofollow noopener">San Martin & Niklas</a>.</p>',
             ],
-            'pt_BR' => [
+            'pt-BR' => [
                 'title' => 'Leadership Development Program - Média Gestão',
                 'content' => '<p>Emitido por <a href="'.route('links.redirect', 'bo1rfc').'" hreflang="pt-BR" target="_blank" rel="nofollow noopener">San Martin & Niklas</a>.</p>',
             ],
@@ -74,7 +74,7 @@ class CertificateSeeder extends Seeder
                 'title' => 'AWS Certified Developer - Associate',
                 'content' => '<p>Issued by <a href="'.route('links.redirect', 'Y8Euy0').'" hreflang="en-US" target="_blank" rel="nofollow noopener">Amazon Web Services</a>.</p>',
             ],
-            'pt_BR' => [
+            'pt-BR' => [
                 'title' => 'AWS Certified Developer - Associate',
                 'content' => '<p>Emitido por <a href="'.route('links.redirect', 'Y8Euy0').'" hreflang="en-US" target="_blank" rel="nofollow noopener">Amazon Web Services</a>.</p>',
             ],

@@ -1,10 +1,10 @@
 @extends('layout.template')
 @section('title', trans('pages.default.show.title'))
-@section('meta:canonical', route(config('app.locale') . '.default.show'))
+@section('meta:canonical', route(strtolower(config('app.locale')) . '.default.show'))
 @section('meta:description', trans('pages.default.show.description'))
 @section('og:title', trans('pages.default.show.title'))
 @section('og:description', trans('pages.default.show.description'))
-@section('og:url', route(config('app.locale') . '.default.show'))
+@section('og:url', route(strtolower(config('app.locale')) . '.default.show'))
 @section('og:image', url('images/cover.png'))
 @section('twitter:card', trans('pages.default.show.type'))
 
@@ -27,8 +27,8 @@ $certificates = new App\Services\CertificateService;
                                 <span class="d-inline-block d-md-none">EN</span>
                             </a>
                         </li>
-                        <li class="language__item {{ config('app.locale') === 'pt_BR' ? 'active' : '' }}">
-                            <a href="{{ route('pt_BR.default.show') }}" hreflang="pt-BR" class="language__link">
+                        <li class="language__item {{ config('app.locale') === 'pt-BR' ? 'active' : '' }}">
+                            <a href="{{ route('pt-br.default.show') }}" hreflang="pt-BR" class="language__link">
                                 <span class="d-none d-md-inline-block">Português</span>
                                 <span class="d-inline-block d-md-none">PT</span>
                             </a>
