@@ -118,7 +118,7 @@ class WorkSeeder extends Seeder
                 'content' => '<p>Worked as lead developer for the company\'s biggest clients, leading the development team in the projects for these clients. I also helped to define the process for the company\'s new service of <abbr title="Information Technology">IT</abbr> Outsourcing.</p>',
             ],
             'pt-BR' => [
-                'job_title' => 'Lider de Desenvolvedor',
+                'job_title' => 'Lider de Desenvolvimento',
                 'company' => 'Mobister',
                 'content' => '<p>Trabalhei como lider de desenvolvimento para as maiores contas da empresa, liderando o time de desenvolvimento nos projetos desses clientes. Também ajudei a definir o processo para o novo serviço da empresa de Outsourcing de <abbr title="Tecnologia da Informação">TI</abbr>.</p>',
             ],
@@ -164,7 +164,7 @@ class WorkSeeder extends Seeder
                 'content' => '<p>Now focusing only on medium and high complexity <abbr title="Information Technology">IT</abbr> Projects, we have relaunched the Rits brand as a company of the Mobister group and are working to further strengthen the Developers and <abbr title="User Experience">UX</abbr> Designers team.</p>',
             ],
             'pt-BR' => [
-                'job_title' => 'Desenvolvedor',
+                'job_title' => 'Gerente de TI',
                 'company' => 'Rits Tecnologia',
                 'content' => '<p>Agora focando apenas em projetos de <abbr title="Tecnologia da Informação">TI</abbr> de média e alta complexidades, nós relançamos a marca Rits como uma empresa do grupo Mobister e estamos trabalhando para fortelecer ainda mais as equipes de Desenvolvedores e <abbr title="User Experience">UX</abbr> Designers.</p>',
             ],
